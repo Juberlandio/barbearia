@@ -1,0 +1,79 @@
+<!DOCTYPE html><!-- Tag de informação - não precisa ser fechada--><!-- Nome maiusculo com uma exclamação no nome, com nome html disendo para o navegador que estamos usando a última versão do html --><!-- Tag de informação - não precisa ser fechada-->
+<html lang="pt-br"><!-- Tag estrutural de conteúdo - precisa ser fechada --><!-- Tag de conteúdo - precisa ser fechada--><!-- Dar a opção de traduzir a pagina se seu comput estiver em outro idioma -->
+
+<head><!--DEFINIR META TAGS --><!-- Cabeça - Informações que estamos passando para o navegador -->
+	<meta charset="UTF-8"><!--Para definir que estamos usando a tabela de caracteres UNICODE--><!-- Tag meta passa informações para o navegador --><!-- Atributo charset dicionário --><!--Navegador precisa de informações para renderizar nossa pagina corretamente, sistema opracional do seu computador celular ou ate mesmo navegador ta usando idioma ingles não vai exibir assentos da pagina, Mudança de idioma -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Suporte Explorer Antigos-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><!--Mobile - <meta name="porta de visualização" content="largura=largura do dispositivo, escala inicial=1,0"> -->
+	<title>Barbearia Alura</title><!-- Nome da pagina -->
+	<link rel="stylesheet" href="css/style.css"><!-- 3 forma css lincando com outro arquivo - pagina inteira ou qualquer outra pagina -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<style>
+	</style><!--CSS interno,  2 forma css dentro do head - aplicado a pagina inteira -->
+</head><!-- RED --><!-- Cabeça -->
+<!-- 1 forma css Inline? - Css dentro do body com a propriedade style - aplicado a linha-->
+
+<body><!--BARY--><!--DEFINIR TAGS DE APRESENTAÇÃO DO CONTEUDO EM SÍ --><!-- Corpo - Informações que queremos exibir na pagina -->
+	<header>
+		<div class="caixa">
+			<h1><img src="img/logo.png" alt="Logo corte de cabelo"></h1> <!-- Tag auto contida -->
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<img class="banner" src="img/banner.jpg">
+
+	<main>
+		<section class="principal"> <!-- Barbearia container --> <!--Por padrão - As divisoes não interferen na apresentação do conteúdo - Serven para marcar o conteúdo e editar no css -->
+			<h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+			<!-- Fonte padrão do navegador 16 PX -->
+			<img class="utensilios" src="img/utensilios.jpg" alt="Utensilios de um barbeiro.">
+
+			<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+			<p><!-- ID serve para itens únicos --><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong><!-- Forte Negrito "Inportância" -->.</em><!-- O elemento de ênfase --></p>
+			<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+		</section><!--Elemento de secionamento mais generico-->
+
+		<section class="mapa"> <!-- Mapa container -->
+			<h3 class="titulo-principal">Nosso estabelecimento</h3>
+			<p><!-- Paragrafo -->Nosso estabelecimento está localizado no coração da cidade.</p>
+			<div class="mapa-conteudo">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483278365396!2d-46.63466568562861!3d-23.588249068469487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum!5e0!3m2!1spt-BR!2sbr!4v1568814489656!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</div>
+		</section><!--Elemento de secionamento mais generico-->
+
+		<section class="beneficios"><!--Elemento de secionamento mais generico-->
+			<h3 class="titulo-principal">Benefícios</h3>
+			<!-- Comportamento de uma tag ocupar 100% da pagina e chamado block -->
+			<div class="conteudo-beneficios"><!-- Class serve para itens repetidos + usada-->
+				<ul class="lista-beneficios"><!-- Lista não ordenada -->
+					<!-- Class serve para itens repetidos + usada-->
+					<li class="itens">Atendimento aos Clientes</li>
+					<li class="itens">Espaço diferenciado</li>
+					<li class="itens">Localização</li>
+					<li class="itens">Profissionais Qualificados</li>
+					<li class="itens">Pontualidade</li>
+					<li class="itens">Limpeza</li>
+				</ul><img src="img/beneficios.jpg" class="imagem-beneficios">
+			</div>
+
+			<div class="video"><!-- Video container -->
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</section><!--Elemento de secionamento mais generico-->
+	</main>
+
+	<footer>
+		<img src="img/logo-branco.png"><!-- Tag auto contida -->
+		<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+	</footer>
+</body><!--BARY--><!-- Corpo -->
+
+</html><!-- Tag estrutural de conteúdo -->

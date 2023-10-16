@@ -1,0 +1,44 @@
+/*Organização no codigo css, baseando-se no HTML*/
+#banner {
+    width: 100%; /*largura*/
+}
+.titulo-principal {
+    padding-left: 15px;
+}
+
+.principal {
+    background: #cccccc; /*fundo; Cor do Fundo do elemento + Linguagem Hexadecimal */
+    padding: 30px;
+}
+.titulo-cantralizado {
+    text-align: center;/* Texto alinhado ao centro */
+}
+p {
+    text-align: center; /* Texto alinhado ao centro */
+}
+#missao {  /* ID Identificador de paragrafo específico - Tralha e nome do indentificador */
+    font-size: 20px /*tamanho da fonte:*/
+}
+em strong { /* Alterar especificamente strong que esta dentro de EM */
+    color: #ff0000; 
+}
+.itens { /* Class usa-se um ponto. */
+    font-style: italic; /* estilo da fonte: itálico; Mudando a fonte para italico */
+}
+.beneficios {
+    background: #FFFFFF; /* Cor maxima */
+    padding: 20px;
+}
+
+ul {
+	display: inline-block; /*Exibição: bloco em linha; Para a lista aceitar a imagem do lado - Lista alinhada so com o tamanho dela e imagem 50%*/
+	vertical-align:top; /* Todos os elementos no css por padrão são alinhados linha de baixo */
+	width: 20%; /* Largura */
+	margin-right: 15%;
+}
+.imagembeneficios {
+    width: 50%;
+}
+/* #RRGGBB Tralha mais 6 digitos RGB */ /* Hexadecimal 0123456789abcdef - RGB RED GREEN BLUE #RRGGBB - 0 = auxencia de cor - F = Máximo de cor */
+/* RGB(RED,GREE,BLUE) RGB 0,1,2,3,4,5......255  */
+/* DIMENSOES CSS- Quatro parametros muito importantes - LARGURA, ALTURA - ESPAÇAMENTOS INTERNO E EXTERNO*/

@@ -1,0 +1,410 @@
+* {
+  /* Reset - Receita de bolo para colocar em todos os projetos; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Seletor
+Propriedades: Valores*/
+
+body {
+  /*Seletor de TAG*/
+  font-family: "Montserrat", sans-serif;
+}
+.auto {
+  /*Seletor de TAG*/
+  width: 960px;
+  margin: 0 auto;
+}
+header {
+  /*Seletor de TAG*/
+  background: #d6d6d6; /*Fundo*/
+  padding: 20px 0; /*Top, Right, Boton, Left*/
+}
+.caixa {
+  /*Seletor de TAG*/
+  position: relative; /*Tag div com classe caixa limitando o nav*/
+  width: 940px;
+  margin: 0 auto; /*Top, Right, Boton, Left; auto para se ajustar a diferentes tamanhos de tela;*/
+}
+nav {
+  /*Seletor de TAG*/ /*Tag nav, posição absolute dentro da .caixa com posição relativa.*/
+  position: absolute; /*Posição absoluta a tela*/
+  top: 110px;
+  right: 0px;
+}
+nav li {
+  /*Seletor aninhado*/
+  display: inline; /*exibição: em linha;*/
+  margin: 0 0 0 15px; /*15px esquerda*/ /*Top, Right, Boton, Left*/
+}
+nav a {
+  /*Seletor Ate Profundidade Nivel 3 Boa Pratica*/
+  text-transform: uppercase; /*transformação de texto: maiúsculas;*/
+  color: #000000; /*cor: #000000;*/
+  font-weight: bold; /*intensidade da fonte: Negrito;*/
+  font-size: 22px; /*tamanho da fonte: 22px;*/
+  text-decoration: none; /*decoração de texto: nenhum;*/
+}
+nav a:hover {
+  /*Seletor aninhado*/ /*:Pseudo classe*/
+  color: #c78c19;
+  text-decoration: underline;
+}
+/* ----------------------------------------------------------------------- */
+
+.produtos {
+  /*Seletor de Class*/
+  width: 940px; /*Colocando uma largura para a lista centralizar;*/
+  margin: 0 auto; /*Top, Right, Boton, Left*/ /*Cima baixo, Direita esquerda auto para se ajustar a diferentes tamanhos de tela;*/
+  padding: 50px 0; /*Top, Right, Boton, Left*/
+}
+.produtos li {
+  /*Seletor aninhado com class*/
+  display: inline-block; /*Colocando a lista na vertical;*/
+  text-align: center; /*alinhamento de texto: centro;*/
+  width: 30%; /* 30% de largura, dentro 30px de padding graças ao box-sizing: border-box; */
+  vertical-align: top; /*alinhamento para a linha de cima*/
+  margin: 0 1.5%; /*Top, Right, Boton, Left*/ /*Espaçamento externo*/
+  padding: 30px 20px; /*Espaçamento interno*/ /*Top, Right, Boton, Left*/
+  box-sizing: border-box; /*dimensionamento de caixa: caixa de borda; */
+  /*Aspectos importantissimos da borda - Tamanho, tipo e cor.
+    border-color:#000000; Cor da borda.
+    border-width: 2px; largura da borda.
+    border-style: solid; Estilo de borda.*/
+  border: 2px solid #000000;
+  border-radius: 10px; /*20px 30px 40px; raio da borda*/
+}
+.produtos li:hover {
+  /*Seletor*/ /*:Pseudo classe*/
+  border-color: #c78c19;
+}
+.produtos li:active {
+  /*Seletor*/ /*:Pseudo classe*/
+  border-color: #088c19;
+}
+.produtos li:hover h2 {
+  /*Seletor aninhado com class*/
+  font-size: 34px;
+}
+.produtos h2 {
+  /*Seletor aninhado com class*/
+  font-size: 30px; /*tamanho da fonte*/
+  font-weight: bold; /*intensidade da fonte: Negrito; Peso da fonte*/
+}
+.produto-descrição {
+  /*Seletor class*/
+  font-size: 18px;
+}
+.produto-preço {
+  /*Seletor class*/
+  font-size: 22px;
+  font-weight: bold; /*intensidade da fonte: Negrito; Peso da fonte*/
+  margin-top: 10px;
+}
+/* ----------------------------------------------------------------------- */
+footer {
+  /*Seletor TAG*/
+  text-align: center;
+  /*background: #cccccc;*/
+  background: url("../img/bg.jpg");
+  padding: 40px 0; /*Top, Right, Boton, Left*/
+}
+.copyright {
+  /*Seletor class*/
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px 0 0; /*Top, Right, Boton, Left*/
+}
+/* ----------------------------------------------------------------------- */
+form {
+  /*Seletor Tag*/
+  margin: 40px 0; /*Top, Right, Boton, Left*/
+}
+form label,
+form legend {
+  /*Seletor Agrupados*/ /*Seletor Ate Profundidade Nivel 3 Boa Pratica*/ /*Duplicação do mesmo extilo para dois elementos*/
+  display: block; /*Colocando um abaixo do outro*/
+  font-size: 20px;
+  margin: 0 0 10px; /*Top, Right, Boton, Left*/ /*Margem para baixo*/
+}
+fieldset {
+  border: 0;
+}
+.input-padrao {
+  /*Seletor class*/
+  display: block; /*Colocando um abaixo do outro*/
+  margin: 0 0 20px; /*Top, Right, Boton, Left*/ /*Margem para baixo*/
+  padding: 10px 25px; /*Top, Right, Boton, Left*/
+  width: 50%;
+}
+.checkbox {
+  /*Seletor class*/
+  margin: 20px 0; /*Top, Right, Boton, Left*/
+}
+/* -------------------------------------------------------------------------- */
+.enviar {
+  /*Seletor class*/ /*Botão*/
+  width: 40%;
+  padding: 15px 0; /*Top, Right, Boton, Left*/
+  background: orange; /*Cor do texto*/
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px; /*Borda do botão*/
+  transition: 1s all; /*Transição de cor do botão*/
+  cursor: pointer; /*Mãozinha no botão*/
+}
+.enviar:hover {
+  /*Seletor class*/
+  background: darkorange;
+  /*transform: rotate(70deg) scale(1.2);*/
+  transform: scale(1.2);
+}
+/* -------------------------------------------------------------------------- */
+
+table {
+  /*Seletor TAG*/
+  margin: 20px 0 40px; /*Top, Right, Boton, Left*/ /*cima 0 baixo*/
+}
+thead {
+  /*Seletor TAG*/
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+td,
+th {
+  /*Seletor de Agrupados*/ /*Duplicação do mesmo extilo para dois elementos*/
+  border: 1px solid #000000;
+  padding: 8px 15px; /*Top, Right, Boton, Left*/
+}
+/*Css da pagina inicial*/
+.banner {
+  /*Seletor Class*/
+  width: 100%;
+}
+.titulo-principal {
+  /*Seletor Class*/
+  text-align: center;
+  font-size: 2em; /* Padrão do navegador 16px*/ /* 2em 32 px*/
+  margin: 0 0 1em; /* Espaçamento proporciponal ao tamanho da fonte 1em*/ /* Medidas proporcionais com css 1em*/ /* Padrão do navegador 16px*/
+  clear: left; /*LIMPANDO O FLOAT*/
+  /*color: rgba(0,0,0,0.3); /* RGBA Camada alfa de opaciadade 0.3*/
+  text-shadow: 2px 2px red; /*Opacidade no texto*/
+}
+/*.titulo-principal:first-letter { Primeira letra do titulo principal em negrito
+    font-weight: bold;
+}*/
+
+/*p:first-line { Toda primeira linha de texto em italico
+}*/
+
+/*.titulo-principal:before {
+    content: "[ ";
+}
+.titulo-principal:after {
+    content: " ]";
+}*/
+.principal {
+  /*Seletor de class*/
+  padding: 3em 0;
+  background: #fefefe;
+  width: 940px;
+  margin: 0 auto; /*Top, Right, Boton, Left*/
+}
+.principal p {
+  /*Seletor class*/
+  margin: 0 0 1em;
+}
+.principal strong {
+  /*/*Seletor aninhado com class*/
+  font-weight: bold;
+}
+.principal em {
+  /*Seletor aninhado com class*/
+  font-style: italic;
+}
+.utensilios {
+  /*Seletor de Class*/
+  width: 120px;
+  float: left; /*COLOCANDO IMG FLUTUANDO COM TEXTO*/
+  margin: 0 20px 0 0;
+}
+.mapa {
+  /*Seletor class*/
+  padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+  /*+background: linear-gradient(#fefefe, #888888);*/
+  /*+background: linear-gradient(90deg, #fefefe 50%, #888888, red, blue, yellow);*/
+  /*+background: radial-gradient(#fefefe 50%, #888888 20%, red 5%, blue 20%, yellow 5%);*/
+}
+.mapa-conteudo {
+  /*Seletor class*/
+  width: 940px;
+  margin: 0 auto; /*Top, Right, Boton, Left*/
+}
+.mapa p {
+  /*/*Seletor aninhado com class*/
+  margin: 0 0 2em;
+  text-align: center;
+}
+.beneficios {
+  /*Seletor class*/
+  padding: 3em 0;
+  background: #888888;
+  /*box-shadow: inset 0 0 30px #ffffff;*/
+} /*Seletor class*/
+.conteudo-beneficios {
+  width: 640px;
+  margin: 0 auto;
+}
+.lista-beneficios {
+  /*Seletor class*/
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+.itens {
+  /*Seletor class*/
+  line-height: 1.5;
+}
+/*
+                 Pseudo classes
+a:hover { Almenta a fonte quando passa o mause por cima.
+    Font-size:25px;}
+Classe ou tag:fist-clid{ Primeiro filho
+    border:1px solid #Red:}
+    Classe ou tag:Last-clid{ Ultimo filho
+    border:1px solid #Red:}
+Classe:nth-child(even){ Par
+    background: blue;}
+Classe:nth-child(odd){ Inpar
+    background: blue;}
+Classe:nth-child(2n) { Pares em NEGRITO
+    font-weight: bold; 
+Classe:nth-child(2) { Qualquer em NEGRITO
+    font-weight: bold;
+.itens:last-child { Ultimo em NEGRITO
+    font-weight: bold; 
+    
+    */
+
+/*
+                 Pseudo Elementos
+Classse ou tag::First:letter{ Primeira Letra maior.
+    Font-size:25px;}
+Classe ou tag::fist-line{ Primeira linha em maiusculo
+    Font-size:25px:}
+Classe ou tag::selection{ Selecionar em vermelho
+    background Red;}
+h1::before { Seta no titulo principal - Arrow Symbols
+    content:'-'; conteudo}
+h1::After { Seta no titulo principal -Arrow Symbols
+    content:'-', conteudo}
+.titulo-principal:before {
+    content: "[ ";}
+.titulo-principal:after {
+    content: " ]";
+
+    */
+
+.itens:before {
+  /*Seletor class - :Pseudo classe*/
+  content: "★";
+}
+.itens:first-child {
+  /*Seletor class*/ /*Seletor*/ /*Primeiro irmão da lista NEGRITO*/
+  font-weight: bold;
+}
+.imagem-beneficios {
+  /*Seletor class*/
+  width: 50%;
+  opacity: 0.3; /*De 0 a 1*/
+  transition: 800ms;
+  /*box-shadow: 10px 10px 30px 20px #000000, -10px -10px yellow, -20px 20px rgba(255,0,0,0.5);   /*box-shadow: x - y - Solido para tranparente - Intensidade da borda - #000000;*/
+  box-shadow: 10px 10px 10px #000000; /*Opacidade na foto*/
+}
+.imagem-beneficios:hover {
+  /*Seletor class*/
+  opacity: 1;
+}
+.video {
+  /*Seletor class*/
+  width: 560px;
+  margin: 2em auto;
+}
+/*main > p { Filhos diretos da main - colados na main
+    background: red;
+}
+img + p { So o paragrafo que vem logo apos uma imagem
+    background: blue;
+}
+img ~ p { Todos os paragrafos que vem após uma imagem
+    background: yellow;
+}
+.principal p:not(#missao) { Todos os paragrafos que não tem o ID missao
+    background: orange;
+}*/
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+  .caixa,
+  .principal,
+  .conteudo-beneficios,
+  .mapa-conteudo,
+  .video {
+    /*Seletor aninhado com class*/
+    width: auto;
+  }
+  h1 {
+    /*Seletor TAG*/
+    text-align: center;
+  }
+  nav {
+    /*Seletor TAG*/
+    position: static;
+  }
+  .lista-beneficios,
+  .imagem-beneficios {
+    /*Seletor aninhado*/ /*Seletor Ate Profundidade Nivel 3 Boa Pratica*/
+    width: 100%;
+    text-align: center;
+  }
+  .produtos,
+  .produtos li,
+  .produto-preço {
+    /*Seletor aninhado*/
+    width: 100%;
+    margin: 10px 0;
+  }
+  main {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .auto {
+    width: 100%;
+    text-align: left;
+  }
+  form {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .input-padrao {
+    width: 100%;
+  }
+  table {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .btn {
+    text-align: center;
+  }
+  .enviar {
+    /*Seletor class*/ /*Botão*/
+    font-size: 14px;
+  }
+}
